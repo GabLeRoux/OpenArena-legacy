@@ -14,7 +14,6 @@ jobs:
       with:
         workflow: ci_builds.yml
         workflow_conclusion: success
-        commit: ${{github.event.pull_request.head.sha}}
         path: ./artifacts/
         event: push
     - name: Release
